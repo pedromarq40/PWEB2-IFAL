@@ -67,11 +67,15 @@ app.post("/login", (req, res) => {
 
     if (!(Object.keys(usuarios).includes(user.email))){
         console.log('Não há usuário cadastrado com esse email!')
+        return res.redirect('/')
     }
 
     if ((usuarios[user.email].senha == user.senha)) {
         console.log('Login Concluido')
         return res.redirect('/tarefa')
+    } else {
+        console.log('Senha incorreta!')
+        return res.redirect('/')
     }
 })
 

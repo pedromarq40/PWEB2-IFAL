@@ -4,10 +4,14 @@
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0",
+
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    //"module": "ESNext",
     "target": "esnext",
     //"types": [],
     // For nodejs:
@@ -35,7 +39,7 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    // "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",

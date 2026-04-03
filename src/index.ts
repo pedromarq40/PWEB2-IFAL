@@ -1,4 +1,5 @@
-import express, {Request, Response} from 'express'
+import express from 'express'
+import type  {Request, Response} from 'express'
 import crypto from 'crypto'
 
 const app = express()
@@ -106,5 +107,5 @@ app.patch("/tarefas/:id", (req : Request<{id : string}>, res : Response) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`Toma teu server ai chefia: $http://localhost:${PORT}`)
+    console.log(`Toma teu server ai meu nobre: http://localhost:${PORT}`)
 })

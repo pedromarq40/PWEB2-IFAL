@@ -33,3 +33,5 @@ coverage/
 
 # macOS
 .DS_Store
+
+/src/generated/prisma

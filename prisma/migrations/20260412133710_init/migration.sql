@@ -1,8 +1,8 @@
 -- CreateTable
 CREATE TABLE "Tarefa" (
     "id" TEXT NOT NULL PRIMARY KEY,
-    "name" TEXT NOT NULL,
     "titulo" TEXT NOT NULL,
+    "texto" TEXT NOT NULL,
     "concluida" BOOLEAN NOT NULL DEFAULT false,
     "criadoEm" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "atualizadoEm" DATETIME NOT NULL

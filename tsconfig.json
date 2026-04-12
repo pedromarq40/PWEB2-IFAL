@@ -4,16 +4,19 @@
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
+
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "target": "ES2023",
+    "strict": true,
+    "esModuleInterop": true,
     "ignoreDeprecations": "6.0",
-
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    //"module": "ESNext",
-    "target": "esnext",
-    //"types": ["node"],
+    //"module": "nodenext",
+    //"target": "esnext",
+    //"types": [],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -37,14 +40,13 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
-    "strict": true,
+    //"strict": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "esModuleInterop": true
   },
   "exclude" : ["prisma.config.ts"]
 }

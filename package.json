@@ -1,28 +1,27 @@
 {
-  "name": "ts-express",
+  "name": "teste",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
-  "license": "ISC",
-  "author": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/server.ts"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
     "@types/express": "^5.0.6",
-    "@types/node": "^25.5.2",
-    "dotenv": "^17.4.0",
-    "prisma": "^7.6.0",
+    "@types/node": "^25.6.0",
+    "prisma": "^7.7.0",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   },
   "dependencies": {
-    "@prisma/adapter-better-sqlite3": "^7.6.0",
-    "@prisma/client": "^7.6.0",
+    "@prisma/adapter-better-sqlite3": "^7.7.0",
+    "@prisma/client": "^7.7.0",
     "better-sqlite3": "^12.8.0",
     "express": "^5.2.1"
   }
